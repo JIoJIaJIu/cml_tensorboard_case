@@ -10,7 +10,7 @@ def create_model():
   return tf.keras.models.Sequential([
     tf.keras.layers.Flatten(input_shape=(28, 28)),
     tf.keras.layers.Dense(512, activation='relu'),
-    tf.keras.layers.Dropout(0.11),
+    tf.keras.layers.Dropout(0.23),
     tf.keras.layers.Dense(14, activation='softmax')
   ])
 
